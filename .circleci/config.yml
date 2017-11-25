@@ -8,19 +8,13 @@ jobs:
       - checkout
       - run:
           name: echo npm version
-          command: 'npm -v'
-      - restore_cache:
-          key: dependency-cache-{{ checksum "package.json" }}
+          command: npm -v
       - run:
           name: Install npm
           command: npm install
-      - save_cache:
-          key: dependency-cache-{{ checksum "package.json" }}
-          paths:
-            - node_modules
       - run:
-          name: test1.js lint check
+          name: check test1.js lint
           command: npm run lint1
       - run:
-          name: test2.js lint check
+          name: check test2.js lint
           command: npm run lint2
