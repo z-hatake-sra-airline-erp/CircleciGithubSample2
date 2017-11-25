@@ -14,3 +14,9 @@ jobs:
       - run:
           name: Install npm
           command: npm install
+      - run:
+          name: test1.js lint check
+          command: eslint test1.js
+      - run:
+          name: test2.js lint check
+          command: eslint test2.js
