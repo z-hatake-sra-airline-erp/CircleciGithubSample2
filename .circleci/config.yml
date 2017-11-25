@@ -1,0 +1,22 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/node:7.10
+
+    working_directory: ~/repo
+
+    steps:
+      - checkout
+        - run:
+          name: Update npm
+          command: 'sudo npm install -g npm@latest'
+        - run:
+          name: Install npm
+          command: npm install
+        - run:
+          name: test1.jsでLintを実行
+          command: eslint test1.js
+        - run:
+          name: test2.jsでLintを実行
+          command: eslint test2.js
