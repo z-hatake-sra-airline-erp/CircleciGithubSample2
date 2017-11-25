@@ -20,7 +20,7 @@ jobs:
             - node_modules
       - run:
           name: test1.js lint check
-          command: eslint test1.js
+          command: npm run lint1
       - run:
           name: test2.js lint check
-          command: eslint test2.js
+          command: npm run lint2
