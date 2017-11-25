@@ -1,0 +1,23 @@
+{
+  "name": "cg2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint1": "eslint test1.js",
+    "lint2": "eslint test2.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/meganedogYuu/CircleciGithubSample2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/meganedogYuu/CircleciGithubSample2/issues"
+  },
+  "homepage": "https://github.com/meganedogYuu/CircleciGithubSample2#readme",
+  "devDependencies": {
+    "eslint": "^4.11.0"
+  }
+}
