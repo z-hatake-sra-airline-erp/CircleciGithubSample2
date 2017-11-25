@@ -7,14 +7,8 @@ jobs:
     steps:
       - checkout
       - run:
-        name: Update npm
-        command: 'sudo npm install -g npm@latest'
+          name: Update npm
+          command: 'sudo npm install -g npm@latest'
       - run:
-        name: Install npm
-        command: npm install
-      - run:
-        name: test1.jsでLintを実行
-        command: eslint test1.js
-      - run:
-        name: test2.jsでLintを実行
-        command: eslint test2.js
+          name: Install npm
+          command: npm install
