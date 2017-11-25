@@ -6,15 +6,15 @@ jobs:
     working_directory: ~/repo
     steps:
       - checkout
-        - run:
-          name: Update npm
-          command: 'sudo npm install -g npm@latest'
-        - run:
-          name: Install npm
-          command: npm install
-        - run:
-          name: test1.jsでLintを実行
-          command: eslint test1.js
-        - run:
-          name: test2.jsでLintを実行
-          command: eslint test2.js
+      - run:
+        name: Update npm
+        command: 'sudo npm install -g npm@latest'
+      - run:
+        name: Install npm
+        command: npm install
+      - run:
+        name: test1.jsでLintを実行
+        command: eslint test1.js
+      - run:
+        name: test2.jsでLintを実行
+        command: eslint test2.js
